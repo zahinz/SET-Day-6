@@ -13,7 +13,7 @@
 ## What I learned yesterday 📚
 * `flew-wrap: wrap`
 * `flex-grow` apply on the children of `display: flex`
-* CSS variables `:root { --your-custom-name : your custom styling}
+* CSS variables `:root { --your-custom-name : your custom styling}`
 * nth-child(x)
 * CSS subclass using `>`
 * `>` children of the div 
