@@ -1,0 +1,21 @@
+* {margin: 0; padding: 0;}
+
+html, body {height: 100%; width: 100%;}
+
+#container {
+    width: 900px;
+    height: 500px;
+    background-color: green;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+    #container {
+        background-color: red;
+    }
+}

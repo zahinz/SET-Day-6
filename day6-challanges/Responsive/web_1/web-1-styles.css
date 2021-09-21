@@ -1,0 +1,391 @@
+* {margin: 0; padding: 0;}
+
+html, body {
+    height: 100%; 
+    width: 100%;
+    font-family: "Lato", sans-serif;
+}
+
+:root {
+    --primary-color: black;
+    --secondary-color: gray;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    border: none;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 0;
+    margin-top: 15px;
+    transition: all 350ms;
+    border: 1.5px solid var(--primary-color)
+}
+
+button:hover {
+    color: var(--primary-color);
+    background-color: white;
+}
+
+input {
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid var(--secondary-color);
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: black;
+}
+
+#app {
+    min-width: 300px;
+}
+
+.title {
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    font-size: 0.8rem;
+}
+
+
+/* NAVBAR */
+nav {
+    background-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 1.25rem;
+}
+
+nav > *, nav div > * {
+    color: white;
+}
+
+nav .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 400px;
+}
+
+
+
+
+/* SLIDES */
+
+
+
+
+/* BAND */
+
+#band {
+    text-align: center;
+    margin-top: 30px;
+    padding: 1.25rem;
+}
+
+#band > * {
+    margin-top: 10px;
+}
+
+#band p {
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+#band .members p{
+    text-align: center;
+    margin: 30px 0 20px;
+    font-size: 0.8rem;
+}
+
+#band .members img{
+    width: 70%;
+}
+
+
+/* TOUR */
+#tour {
+    background-color: black;
+    text-align: center;
+    padding: 40px 1.25rem 60px;
+}
+
+#tour h2, #tour p {
+    color: white;
+    padding-top: 10px;
+}
+
+#tour .header .subtitle {
+    padding-bottom: 30px;
+    color: var(--secondary-color);
+}
+
+#tour ul {
+    background-color: white;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#tour ul li {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(172, 172, 172);
+}
+
+#tour .sold-out {
+    background-color: rgb(241, 46, 46);
+    color: white;
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+
+#tour .card {
+    background-color: white;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+#tour .card .text {
+    padding: 1.25rem;
+    height: 200px;
+}
+
+#tour .card .text p {
+    color: var(--primary-color);
+    padding-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+
+/* CONTACT */
+#contact {
+    text-align: center;
+    padding: 80px 1.25rem 40px;
+    height: 450px;
+    position: relative;
+}
+
+#contact .title {
+    margin-bottom: 10px;
+}
+
+#contact .info {
+    text-align: left;
+    font-size: 0.8rem;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 0 20px;
+}
+
+#contact button {
+    position: absolute;
+    right: 1.25rem;
+    bottom: 70px;
+}
+
+
+/* FOOTER */
+footer {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     padding-bottom: 50px;
+ }
+
+footer .socials {
+     margin: 30px 0 20px
+ }
+
+footer .socials i{
+    color: var(--secondary-color);
+}
+
+footer .body, footer .body a {
+    color: var(--secondary-color);
+}
+
+
+
+/* MOBILE */
+@media (max-width: 999px) {
+
+    .m-view {
+        display: block;
+    }
+
+    .lg-view {
+        display: none;
+    }
+    
+}
+
+/* DESKTOP */
+@media (min-width: 1000px) {
+
+    .m-view {
+        display: none;
+    }
+
+    .lg-view {
+        display: block;
+    }
+
+    /* NAV */
+    nav {
+        flex-direction: row;
+    }
+
+    nav .nav-menu .lg-view {
+        font-size: 0.8rem;
+    }
+
+    /* SLIDE */
+
+    .mySlides {
+        position: relative;
+    }
+    .mySlides .lg-view {
+        position: absolute;
+        bottom: 30px;
+        left: calc(100%/2);
+        text-align: center;
+        transform: translateX(-50%);
+    }
+
+    .mySlides .lg-view > * {
+        margin-bottom: 10px;
+        color: white;
+    }
+
+
+    /* BAND */
+
+    #band {
+        width: 800px;
+        margin: 100px auto 50px;
+    }
+
+    #band .members {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #band .members div {
+        margin: 0 10px;
+    }
+
+    #band .members div p {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    #band .members img{
+        width: 100%;
+    }
+
+
+    /* TOUR */
+
+    #tour .header {
+        width: 800px;
+        margin: 100px auto 50px;
+    }
+
+    #tour .header .card-grid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #tour .header .card-grid .card {
+        width: 31.2%;
+        margin-top: 5px;
+    }
+
+
+    /* CONTACT */
+
+    #contact {
+        width: 800px;
+        margin: 0 auto;
+        position: static;
+    }
+
+    #contact .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #contact .info {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+    }
+
+    #contact .form {
+        width: 60%;
+        margin-top: 80px;
+    }
+
+    #contact .form div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #contact button {
+        position: static;
+        transform: translateX(382px);
+    }
+
+    #contact .half {
+        width: 235px;
+    }
+
+
+
+
+
+    
+}

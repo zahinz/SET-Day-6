@@ -1,0 +1,133 @@
+:root {
+    --primary-text-color: #333333;
+    --secondary-text-color: #848484;
+    
+    --title-font-size: 2.2rem;
+    --subtitle-font-size: 1.6rem;
+    --day-font-size: 1rem;
+    --body-font-size: 0.9rem
+}
+
+* {margin: 0; padding: 0;}
+
+html, body {
+    height: 100%; 
+    width: 100%; 
+    font-family: sans-serif;
+    color: var(--primary-text-color);
+}
+
+header h1, header p {
+    margin-bottom: 10px;
+}
+
+span, .gray-text {
+    color: var(--secondary-text-color);
+}
+
+.ferh::after {
+    content: "\2109";
+    font-size: 0.6rem;
+    vertical-align: top;
+    font-weight: bold;
+    margin-left: 2px;   
+}
+
+.celc::after {
+    content: "\2103";
+    font-size: 0.6rem;
+    vertical-align: top;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+#app {
+    padding: 1.25rem;
+}
+
+#today-weather, #temperature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#today-weather ul {
+    list-style: none;
+}
+
+#today-weather ul li {
+    margin: 5px 0;
+}
+
+#today-weather #temperature .ferh::after {
+    font-size: 1rem;
+}
+
+
+.day-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--primary-text-color);
+    animation: moveDay;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes moveDay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.day-weather h4 {
+    min-width: 100px;
+}
+
+/* IPAD */
+@media (min-width: 650px) {
+    header {
+        max-width: 650px;
+    }
+
+    .day-temp {
+        width: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* DEKSTOP  */
+@media (min-width: 1000px) {
+    #today-weather {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 250px;
+    }
+
+    .week-weather {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .day-weather {
+        height: 200px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        border-top: none
+    }
+}
+
+
+

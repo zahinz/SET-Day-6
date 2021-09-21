@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Web 1</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- GOOGLE FONT -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="web-1-styles.css">
+
+<body>
+
+    <div id="app">
+
+
+        <!-- Navbar -->
+        <nav>
+            <i class="fa fa-bars m-view"></i>
+
+            <div class="nav-menu">
+                <a href="#">HOME</a>
+                <a href="#band" class="lg-view">BAND</a>
+                <a href="#tour" class="lg-view">TOUR</a>
+                <a href="#contact" class="lg-view">CONTACT</a>
+                <a href="#more" class="lg-view">MORE <i class="fa fa-caret-down"></i></a>
+            </div>
+
+            <i class="fa fa-search lg-view"></i>
+        </nav>
+
+
+        <!-- Page content -->
+
+
+        <div>
+            <!-- Automatic Slideshow Images -->
+            <div class="mySlides">
+                <img src="images/la.jpg">
+                <div class="lg-view">
+                    <h3 class="title">Los Angeles</h3>
+                    <p class="subtitle"><b>We had the best time playing at Venice Beach!</b></p>
+                </div>
+            </div>
+            <div class="mySlides">
+                <img src="images/ny.jpg">
+                <div class="lg-view">
+                    <h3 class="title">New York</h3>
+                    <p class="subtitle"><b>The atmosphere in New York is lorem ipsum.</b></p>
+                </div>
+            </div>
+            <div class="mySlides">
+                <img src="images/chicago.jpg">
+                <div class="lg-view">
+                    <h3 class="title">Chicago</h3>
+                    <p class="subtitle"><b>Thank you, Chicago - A night we won't forget.</b></p>
+                </div>
+            </div>
+
+
+            <!-- The Band Section -->
+            <div id="band">
+                <h2 class="title">THE BAND</h2>
+                <p class="subtitle"><i>We love music</i></p>
+                <p class="body">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="members">
+                    <div>
+                        <p>Name</p>
+                        <img src="images/bandmember.jpg" alt="Random Name">
+                    </div>
+                    <div>
+                        <p>Name</p>
+                        <img src="images/bandmember.jpg" alt="Random Name">
+                    </div>
+                    <div>
+                        <p>Name</p>
+                        <img src="images/bandmember.jpg" alt="Random Name">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- The Tour Section -->
+            <div id="tour">
+                <div class="header">
+                    <h2 class="title">TOUR DATES</h2>
+                    <p class="subtitle"><i>Remember to book your tickets!</i></p><br>
+                    <ul>
+                        <li class="body">September <span class="sold-out">Sold out</span></li>
+                        <li class="body">October <span class="sold-out">Sold out</span></li>
+                        <li class="body">November <span>3</span></li>
+                    </ul>
+                    <div class="card-grid">
+                        <div class="card">
+                            <img src="images/newyork.jpg" alt="New York">
+                            <div class="text">
+                                <p><b>New York</b></p>
+                                <p>Fri 27 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button>Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/paris.jpg" alt="Paris">
+                            <div class="text">
+                                <p><b>Paris</b></p>
+                                <p>Sat 28 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button>Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/sanfran.jpg" alt="San Francisco">
+                            <div class="text">
+                                <p><b>San Francisco</b></p>
+                                <p>Sun 29 Nov 2016</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button>Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- The Contact Section -->
+            <div id="contact">
+                <h2 class="title">CONTACT</h2>
+                <p class="subtitle"><i>Fan? Drop a note!</i></p>
+                <div class="content">
+                    <div class="info">
+                        <div><i class="fa fa-map-marker"></i> Chicago, US<br></div>
+                        <div><i class="fa fa-phone"></i> Phone: +00 151515<br></div>
+                        <div><i class="fa fa-envelope"> </i> Email: mail@mail.com<br></div>
+                    </div>
+                    <div class="form">
+                        <form action="/action_page.php" target="_blank">
+                            <div>
+                                <div>
+                                    <input type="text" placeholder="Name" class="half" required name="Name">
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Email" class="half" required name="Email">
+                                </div>
+                            </div>
+                            <input type="text" placeholder="Message" class="full" required name="Message">
+                            <button type="submit">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- End Page Content -->
+        </div>
+        <!-- Image of location/map -->
+        <img src="images/map.jpg">
+        <!-- Footer -->
+        <footer>
+            <div class="socials">
+                <i class="fa fa-facebook-official"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-snapchat"></i>
+                <i class="fa fa-pinterest-p"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p class="body">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+    </script>
+
+</body>
+
+</html>

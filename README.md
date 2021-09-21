@@ -31,7 +31,20 @@
 ---
 
 ## What I learned today 💡
-### Title
+### UX knowledge
+* Designed and developed from **mobile first**
+* Target audience - create avatar
+* Then go for user journey
+* Draft the apps or web flow
+* Design
+
+### Mobile responsive
+* `@media (max width @ min width)`
+* `(min-width: 500px)` : 500px and above
+* `(max-width: 500px)` : 500px and below
+* `(min-width: 200px) and (max-width: 700px)` : between 200px and 700px
+* always put `min-width` at the most outer container
+* all elements inside a div `.div-class > *`
 * 
 
 ---
@@ -42,6 +55,8 @@
 ---
 
 ## Homeworks 📝
-*
+* USAtoday rebrading journey [here](https://www.usatoday.com/)
+* HTML meta tags [here](https://www.w3schools.com/tags/tag_meta.asp)
+* 
 
 
